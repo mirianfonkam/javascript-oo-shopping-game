@@ -6,7 +6,7 @@ const items = 0;
 
 // Define the player object here
 
-var player = {
+let player = {
     name,
     score,
     items,
@@ -60,7 +60,7 @@ function MagicProduct(id, name, price, expiryDate, points, isBonus) {
 
 // Establish inheritance between Product() & MagicProduct() here
 
-MagicProduct.prototype = Object.create(Product().prototype);
+MagicProduct.prototype = Object.create(Product.prototype);
     
 // Define Rating class here
 
@@ -374,6 +374,7 @@ function init(data) {
         rateAndExit();
     };
 
+    //code uncommented
     (function setGameCompleteFlag(){
         gameComplete = true;
     })();
