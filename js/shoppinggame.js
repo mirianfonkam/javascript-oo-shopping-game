@@ -227,8 +227,8 @@ function loadMasterData() {
 
 // Complete this function
 const findProductById = (id) => {
-    return function(Product) {
-        return id == Product.id;
+    return function(aProduct) {
+        return id === aProduct.id;
     }
 };
 
