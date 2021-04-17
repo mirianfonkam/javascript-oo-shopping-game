@@ -227,14 +227,14 @@ function loadMasterData() {
 
 // Complete this function
 const findProductById = (id) => {
-    return function(aProduct) {
-        return aProduct.id == id;
+    return function(product) {
+        return product.id === id;
     }
 };
 
 // Complete this function
 const generateProductId = () => {
-    return Math.floor(Math.random() * 20) +  1;
+    return Math.floor(Math.random() * 20 + 1);
 };
 
 
